@@ -17,6 +17,8 @@ console.log(studentName);
 console.log("My name is ");
 
 // Logs "My name is Tonya"
+//Using the + sign with strings and variables is called CONCATENATION
 console.log("My name is " + studentName);
-
+//BACK TICKS AND TEMPLATE LITERALS
+//we are using interpolation here
 console.log(`${studentName}\n${studentAge}`)
