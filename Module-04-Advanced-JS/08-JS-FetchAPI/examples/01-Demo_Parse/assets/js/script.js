@@ -1,11 +1,9 @@
-fetch('https://api.github.com/orgs/twitter/public_members')
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (data) {
-    console.log('Twitter Public Members: Raw data \n----------');
+async function doTheFetch(){
+  
+  const response = await fetch('https://api.github.com/orgs/twitter/public_members')
+  const data = await response.json()
+
     console.log(data);
-  });
 
 fetch('https://api.github.com/orgs/twitter/repos')
   .then(function (response) {
@@ -17,3 +15,4 @@ fetch('https://api.github.com/orgs/twitter/repos')
       console.log(data[i].name);
     }
   });
+}
