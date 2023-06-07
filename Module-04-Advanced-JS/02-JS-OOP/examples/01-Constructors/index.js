@@ -1,4 +1,18 @@
 // Constructor function which can be used to create objects containing the properties "raining", "noise", and the "makeNoise()" function
+// class Animal{
+//   constructor(raining, noise){
+//     this.raining = raining;
+//     this.noise = noise;
+//   }
+//   makeNoise(){
+//         if (this.raining === true) {
+//       console.log(this.noise);
+//     }
+//   }
+// }
+
+//Below does same thing as above
+
 function Animal(raining, noise) {
   this.raining = raining;
   this.noise = noise;
